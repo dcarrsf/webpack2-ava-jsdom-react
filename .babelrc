@@ -1,9 +1,16 @@
 {
-  "presets": [
-    "es2015", 
-    "stage-0", 
-    "react",
-    "@ava/stage-4",
-    "@ava/transform-test-files"
-  ]
+  "presets": ["es2015", "react", "stage-1", "stage-0"],
+  "env": {
+    "AVA": {
+      "plugins": [
+        [
+          "babel-plugin-webpack-loaders",
+          {
+            "config": "${CONFIG}",
+            "verbose": false
+          }
+        ]
+      ]
+    }
+  }
 }
