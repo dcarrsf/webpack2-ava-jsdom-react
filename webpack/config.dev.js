@@ -52,7 +52,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // Generate the index.html file
     new HtmlWebpackPlugin({
-      title: 'Disney Code Challenge',
+      title: 'Evite Prep',
       template: '../src/main.ejs',
       filename: '../index.html'
     })
