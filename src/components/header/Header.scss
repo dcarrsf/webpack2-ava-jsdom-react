@@ -1,0 +1,16 @@
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: lightgray;
+
+  &__title {
+    width: 100%;
+    font-family: sans-serif;
+    border: 1px dashed royalblue;
+  }
+
+  &__nav {
+    
+  }
+}

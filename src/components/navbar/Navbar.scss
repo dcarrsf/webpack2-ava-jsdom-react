@@ -1,0 +1,29 @@
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 1px dashed royalblue;
+
+  ul {
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+
+    li {
+      width: 50%;
+      display: inline-block;
+      border: 1px dashed royalblue;
+
+      a {
+        width: 50%;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: gray;
+      }
+    }
+    li:hover > a {
+      color: royalblue;
+    }
+  }
+}
