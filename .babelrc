@@ -1,3 +1,9 @@
 {
-  "presets": ["es2015", "stage-0", "react"]
+  "presets": [
+    "es2015", 
+    "stage-0", 
+    "react",
+    "@ava/stage-4",
+    "@ava/transform-test-files"
+  ]
 }
