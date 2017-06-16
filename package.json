@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Testing with Ava...",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test:watch": "npm test -- --watch"
   },
   "devDependencies": {
     "ava": "^0.19.1"

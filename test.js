@@ -1,8 +1,12 @@
 // test.js
 import test from 'ava';
 
-console.log(test);
+test('foo', t => {
+	t.pass();
+});
 
-test('one plus one is two', t => {
-  t.equal(1 + 1, 2)
-})
+test('bar', async t => {
+	const bar = Promise.resolve('bar');
+
+	t.is(await bar, 'bar');
+});
