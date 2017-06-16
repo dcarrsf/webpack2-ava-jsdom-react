@@ -4,10 +4,22 @@
   "version": "1.0.0",
   "description": "Testing with Ava...",
   "scripts": {
-    "test": "ava",
-    "test:watch": "npm test -- --watch"
+    "test": "ava --verbose",
+    "test:watch": "npm test -- --watch --verbose"
   },
   "devDependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.19.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "ava": {
+    "babel": {
+      "presets": [
+        "es2015",
+        "stage-0",
+        "react"
+      ]
+    }
   }
 }
