@@ -2,31 +2,31 @@
 import test from 'ava';
 import sinon from 'sinon'
 
-const myFunction = sinon.spy();
+// const myFunction = sinon.spy();
 
-test('my function is running!', t => {
-  myFunction()
-  t.true(myFunction.called)
-});
+// test('my function is running!', t => {
+//   myFunction()
+//   t.true(myFunction.called)
+// });
 
-test.before(t => {
-	// This runs before all tests
-  console.log('\nrun this before\n');
-});
+// test.before(t => {
+// 	// This runs before all tests
+//   console.log('\nrun this before\n');
+// });
 
-test.after(t => {
-	// This runs before all tests
-  console.log('\nrun this after');
-});
+// test.after(t => {
+// 	// This runs before all tests
+//   console.log('\nrun this after');
+// });
 
-test.todo('will think about writing this later');
+test.todo('will add to this example later');
 
-test('foo', t => {
-	t.pass();
-});
+// test('foo', t => {
+// 	t.pass();
+// });
 
-test('bar', async t => {
-	const bar = Promise.resolve('bar');
+// test('bar', async t => {
+// 	const bar = Promise.resolve('bar');
 
-	t.is(await bar, 'bar');
-});
+// 	t.is(await bar, 'bar');
+// });

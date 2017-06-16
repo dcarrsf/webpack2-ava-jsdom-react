@@ -1,3 +1,5 @@
+@import '../_sass/vendor/bootstrap-grid.scss'; // Just the grid from Bootstrap
+
 /**
  * *******************************************************
  *
@@ -31,3 +33,7 @@ h1, h2 {
 h1 {
   margin-top: 14px;
 }
+
+// Link to SASS here to separate from tests
+@import '../components/header/Header.scss';
+@import '../components/navbar/Navbar.scss';

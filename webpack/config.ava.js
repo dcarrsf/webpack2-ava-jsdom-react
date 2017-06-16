@@ -7,15 +7,13 @@ const PATHS = {
 module.exports = {
    resolve: {
      modulesDirectories: [
-       __dirname,
-      'node_modules',
        PATHS.app,
      ]
    },
    module: {
      loaders: [{
          test: /\.css$/,
-         loader: 'style-loader!css-loader?modules&importLoaders=1!postcss-loader',
+         loader: 'style-loader!css-loader?modules&importLoaders=1!sass-loader',
        },
      ]
    }

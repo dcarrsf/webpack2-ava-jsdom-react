@@ -4,8 +4,25 @@
   "version": "1.0.0",
   "description": "Testing with Ava...",
   "scripts": {
-    "test": "CONFIG=$(pwd)/webpack/config.ava.js BABEL_DISABLE_CACHE=1 NODE_ENV=AVA nyc ava --verbose",
-    "test:watch": "npm test -- --watch --verbose"
+    "test": "ava --verbose",
+    "test:watch": "npm test -- --watch"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "files": [
+      "./**/*-spec.js"
+    ],
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "ava": "^0.19.1",
@@ -22,7 +39,7 @@
     "babel-register": "^6.24.0",
     "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.26.1",
-    "enzyme": "^2.7.1",
+    "enzyme": "^2.8.2",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-loader": "^1.6.1",
@@ -36,26 +53,13 @@
     "node-sass": "^4.5.0",
     "nyc": "^11.0.2",
     "postcss-loader": "^2.0.6",
-    "react-addons-test-utils": "^15.4.2",
+    "react-addons-test-utils": "^15.6.0",
+    "react-test-renderer": "^15.6.1",
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.0",
     "sinon": "^2.3.4",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.5"
-  },
-  "ava": {
-    "require": [
-      "babel-register",
-      "babel-polyfill"
-    ],
-    "babel": "inherit"
-  },
-  "dependencies": {
-    "axios": "^0.16.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
   }
 }

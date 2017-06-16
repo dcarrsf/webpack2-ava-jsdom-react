@@ -1,9 +1,18 @@
 import test from 'ava';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+import { shallow } from 'enzyme';
 import App from './App.jsx';
 
-test('App', t => {
-	t.pass();
+// Shallow
+
+test('has a .main class', t => {
+	const wrapper = shallow(<App/>);
+	t.true(wrapper.hasClass('main'));
 });
+
+test('renders a main element', t => {
+	const wrapper = shallow(<App/>);
+	t.is(wrapper.find('main').length, 1);
+});
+
+// Mounted

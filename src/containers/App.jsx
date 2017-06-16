@@ -3,10 +3,6 @@ import React from 'react';
 // App components
 import Header from '../components/header/Header.jsx';
 
-// SASS 
-import './App.scss';
-import '../_sass/vendor/bootstrap-grid.scss'; // Just the grid from Bootstrap
-
 /**
  * *******************************************************
  *
@@ -35,7 +31,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <main>
+      <main className='main'>
         <Header />
       </main>
     );

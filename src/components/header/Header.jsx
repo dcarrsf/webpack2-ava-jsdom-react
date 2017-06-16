@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar.jsx';
-import './Header.scss';
+// import './Header.scss';
 
 /**
  * *******************************************************
