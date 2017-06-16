@@ -1,9 +1,17 @@
 // test.js
 import test from 'ava';
+import sinon from 'sinon'
+
+const myFunction = sinon.spy();
+
+test('my function is running!', t => {
+  myFunction()
+  t.true(myFunction.called)
+});
 
 test.before(t => {
 	// This runs before all tests
-  console.log('run this before\n');
+  console.log('\nrun this before\n');
 });
 
 test.after(t => {
