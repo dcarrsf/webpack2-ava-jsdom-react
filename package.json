@@ -7,7 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack/config.dev.js --inline --hot --no-info",
     "build": "webpack --config ./webpack/config.prod.js --progress --colors --optimize-minimize",
-    "test": "nyc ava --verbose",
+    "test": "nyc ava",
+    "test:verbose": "nyc ava --verbose",
     "test:watch": "npm test -- --watch"
   },
   "ava": {
