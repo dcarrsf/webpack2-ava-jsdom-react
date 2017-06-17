@@ -1,6 +1,7 @@
-// test.js
 import test from 'ava';
 import sinon from 'sinon'
+
+// test.todo('will add to this example later');
 
 // const myFunction = sinon.spy();
 
@@ -19,7 +20,12 @@ import sinon from 'sinon'
 //   console.log('\nrun this after');
 // });
 
-test.todo('will add to this example later');
+// test('Insert to DOM', t => {
+// 	const div = document.createElement('div');
+// 	document.body.appendChild(div);
+
+// 	t.is(document.querySelector('div'), div);
+// });
 
 // test('foo', t => {
 // 	t.pass();

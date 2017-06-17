@@ -4,13 +4,14 @@
   "version": "1.0.0",
   "description": "Testing with Ava...",
   "scripts": {
-    "test": "ava --verbose",
+    "test": "nyc ava --verbose",
     "test:watch": "npm test -- --watch"
   },
   "ava": {
     "require": [
       "babel-register",
-      "babel-polyfill"
+      "babel-polyfill",
+      "./test/helpers/setup-browser-env.js"
     ],
     "files": [
       "./**/*-spec.js"
@@ -37,6 +38,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.24.0",
+    "browser-env": "^2.0.31",
     "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.26.1",
     "enzyme": "^2.8.2",
