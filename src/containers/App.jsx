@@ -19,8 +19,7 @@ class App extends React.Component {
     super(props);
     // State
     this.state = {
-      photos: null,
-      featured: null
+      featured: -1
     };
   }
 

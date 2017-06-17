@@ -1,6 +1,6 @@
 import test from 'ava';
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from './App.jsx';
 
 // Shallow
@@ -16,3 +16,14 @@ test('renders a main element', t => {
 });
 
 // Mounted
+
+test('mounts main element', t => {
+	const wrapper = mount(<App />);
+	t.is(wrapper.find('main').length, 1);
+});
+
+test('has featured state', t => {
+	const wrapper = mount(<App />);
+	const state = wrapper.state();
+	t.is(state.featured, -1);
+});

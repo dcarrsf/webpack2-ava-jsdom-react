@@ -2,8 +2,11 @@
   "name": "ava-signon-es6",
   "author": "Dan Carr",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "Testing with Ava...",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack/config.dev.js --inline --hot --no-info",
+    "build": "webpack --config ./webpack/config.prod.js --progress --colors --optimize-minimize",
     "test": "nyc ava --verbose",
     "test:watch": "npm test -- --watch"
   },
@@ -18,14 +21,13 @@
     ],
     "babel": "inherit"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "axios": "^0.16.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
-  },
-  "devDependencies": {
+    "react-router-dom": "^4.1.1",
     "ava": "^0.19.1",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -60,8 +62,8 @@
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.0",
     "sinon": "^2.3.4",
-    "style-loader": "^0.13.1",
-    "webpack": "^2.2.1",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
 }

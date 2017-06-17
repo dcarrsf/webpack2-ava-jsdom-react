@@ -19,11 +19,6 @@ module.exports = {
   // Add '.jsx' to the resolve.extensions array.
   resolve: {
     extensions: ['.js', '.jsx'],
-    // NOTE: Preact doesn't play nice with react-router, removing for now.
-    // 'alias': {
-    //   'react': 'preact-compat',
-    //   'react-dom': 'preact-compat'
-    // }
   },
   // Run tasks with loaders...
   module: {
@@ -55,7 +50,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // Extract CSS to separate file
     new ExtractTextPlugin({
-      filename: '../css/[name].bundle.min.css',
+      filename: '[name].bundle.min.css',
       allChunks: true,
     }),
     // Optimize environment
